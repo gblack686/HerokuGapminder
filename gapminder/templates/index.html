@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    {{ bokeh_css }}
+    {{ bokeh_js }}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sample Bokeh Server App: Classic Gapminder Visualization</h1>
+    <div>
+        {{ plot_div|indent(8) }}
+    </div>
+    {{ plot_script|indent(8) }}
+</body>
+</html>
